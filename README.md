@@ -7,11 +7,11 @@ This is a client server implementation using gRPC for serialization and transpor
 gRPC basics
 
 - uses [Protocol Buffers](https://developers.google.com/protocol-buffers) for serialization. This means that your data structure is encoded into bytes and ready for transport
-- user [http2](HTTP2) tcp protocol for transport which guarantees delivery
+- uses [http2](HTTP2) tcp protocol for transport which guarantees delivery
 
 Services
 
-- `Go` service which will collect metrics(dummy)
+- `Go` service which will collect metrics (dummy)
 - `Python` service which will detect the anomaly
 
 The `Go` client will communicate with the `Python` server via [gRPC](https://grpc.io/)
